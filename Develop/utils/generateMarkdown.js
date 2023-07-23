@@ -1,6 +1,22 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+function renderLicenseBadge(license) {
+  const colors = {
+    "Apache License 2.0": "F5C26B", // yellow
+    "MIT License": "F07857", // blue
+    "BSD License": "BF2C34", //red
+    "GNU GPLv3 License": "4FB06D", //green
+  };
+
+  // ![Static Badge](https://img.shields.io/badge/:badgeContent)
+
+  const badge =
+    `https://img.shields.io/badge/${license}-${colors[license]}`.replace(
+      / /g,
+      "_"
+    );
+  return badge;
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
@@ -10,9 +26,11 @@ function renderLicenseLink(license) {}
 // If there is no license, return an empty string
 function renderLicenseSection(license) {}
 
-// TODO: Create a function to generate markdown for README
+// Function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.projectTitle}
+  return `# ${data.projectTitle} ![Static Badge](${renderLicenseBadge(
+    data.license
+  )})
 
   ## Description
 
@@ -37,7 +55,7 @@ function generateMarkdown(data) {
 
   ## License
 
-  ${data.license}
+  This application is covered under the ${data.license}
 
   ## How to Contribute
 
@@ -51,7 +69,9 @@ function generateMarkdown(data) {
 
   Github profile: https://github.com/${data.github}
 
-  Please email ${data.email} if you have any questions about the contents of this repository
+  Please email ${
+    data.email
+  } if you have any questions about the contents of this repository
 
 `;
 }
@@ -61,6 +81,8 @@ module.exports = generateMarkdown;
 /* 
 
 POTENTIAL TO ADD AFTER MVP: 
+
+- Ability to add "Other" license based on user input text
 
 ## Credits
 

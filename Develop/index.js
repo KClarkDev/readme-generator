@@ -32,7 +32,7 @@ const questions = [
     type: "list",
     name: "license",
     message:
-      "Which type of Open Source License to you want to add to your project?\n",
+      "Which type of Open Source License to you want to add to your project?",
     choices: [
       "Apache License 2.0",
       "MIT License",
