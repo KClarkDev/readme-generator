@@ -9,30 +9,30 @@ const questions = [
   {
     type: "input",
     name: "projectTitle",
-    message: "What is the title of your project?",
+    message: "What is the title of your project?\n",
   },
   {
     type: "input",
     name: "projectDescription",
     message:
-      "Provide a short description explaining the what, why, and how of your project. Some details you could include are the motivation for the project, what problem it solves, and what you learned.",
+      "Provide a short description explaining the what, why, and how of your project. Some details you could include are the motivation for the project, what problem it solves, and what you learned.\n",
   },
   {
     type: "input",
     name: "installation",
     message:
-      "What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.",
+      "What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.\n",
   },
   {
     type: "input",
     name: "usage",
-    message: "Provide instructions and examples for use.",
+    message: "Provide instructions and examples for use.\n",
   },
   {
     type: "list",
     name: "license",
     message:
-      "Which type of Open Source License to you want to add to your project?",
+      "Which type of Open Source License to you want to add to your project?\n",
     choices: [
       "Apache License 2.0",
       "MIT License",
@@ -44,29 +44,29 @@ const questions = [
     type: "input",
     name: "contributing",
     message:
-      "If you would like other developers to contribute to your application or package, include guidelines for how to do so.",
+      "If you would like other developers to contribute to your application or package, include guidelines for how to do so.\n",
   },
   {
     type: "input",
     name: "tests",
     message:
-      "If you wrote tests for your application, provide examples and explain how to run them.",
+      "If you wrote tests for your application, provide examples and explain how to run them.\n",
   },
   {
     type: "input",
     name: "github",
-    message: "What is your Github username?",
+    message: "What is your Github username?\n",
   },
   {
     type: "input",
     name: "email",
-    message: "What is your email?",
+    message: "What is your email?\n",
   },
 ];
 
 // Function to write README file
-function writeToFile(fileName) {
-  fs.writeFile(fileName, markdown, (err) =>
+function writeToFile(fileName, data) {
+  fs.writeFile(fileName, data, (err) =>
     err ? console.log(err) : console.log("Successfully created README file!")
   );
 }
