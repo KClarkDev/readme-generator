@@ -38,6 +38,7 @@ const questions = [
       "MIT License",
       "BSD License",
       "GNU GPLv3 License",
+      "No License",
     ],
   },
   {
