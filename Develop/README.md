@@ -1,8 +1,8 @@
-# testing none again  
+# README Generator  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Description
 
-  fdsa
+  This CLI application can be used to generate a professional README markdown document based on input within the CLI. The application uses the fs and inquirer libraries.
 
   ## Table of Contents
 
@@ -15,32 +15,32 @@
 
   ## Installation
 
-  fsda
+  Run "npm i inquirerv8.2.4" to install the correct version
 
   ## Usage
 
-  fdsa
+  See video
 
   ## License
 
   
-  This application is covered under the No License
+  This application is covered under the MIT License
 
   Click the badge for more information: 
   
-  
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## How to Contribute
 
-  fdsa
+  N/A
 
   ## Tests
 
-  fda
+  N/A
 
   ## Questions?
 
-  Github profile: https://github.com/fda
+  Github profile: https://github.com/kclarkdev
 
-  Please email fdas if you have any questions about the contents of this repository
+  Please email kec0892@gmail.com if you have any questions about the contents of this repository
 
